@@ -1,0 +1,524 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: Helvetica;
+  -webkit-animation: pulse 10s infinite;
+  animation: pulse 10s infinite;
+ z-index: 0; 
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background: #f44336;
+  }
+  25% {
+    background: #e91e63;
+  }
+  50% {
+    background: #9c2780;
+  }
+  75% {
+    background: #673ab7;
+  }
+  100% {
+    background: #f44336;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background: #f44336;
+  }
+  25% {
+    background: #e91e63;
+  }
+  50% {
+    background: #9c2780;
+  }
+  75% {
+    background: #673ab7;
+  }
+  100% {
+    background: #f44336;
+  }
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: translateZ(0);
+}
+
+.bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -100px;
+  animation: circle 15s infinite;
+  transition-timing-function: linear;
+}
+
+.bubbles li:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+}
+
+.bubbles li:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-delay: 2s;
+  animation-duration: 16s;
+}
+
+.bubbles li:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  animation-delay: 4s;
+  animation-duration: 13s;
+}
+
+.bubbles li:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  animation-delay: 1s;
+  animation-duration: 19s;
+}
+
+.bubbles li:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  animation-delay: 5s;
+  animation-duration: 12s;
+}
+
+.bubbles li:nth-child(6) {
+  width: 25px;
+  height: 25px;
+  left: 10%;
+  animation-delay: 3s;
+  animation-duration: 11s;
+}
+
+.bubbles li:nth-child(7) {
+  width: 55px;
+  height: 55px;
+  left: 70%;
+  animation-delay: 2.5s;
+  animation-duration: 11s;
+}
+
+.bubbles li:nth-child(8) {
+  width: 75px;
+  height: 75px;
+  left: 30%;
+  animation-delay: 3.5s;
+  animation-duration: 11s;
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1080px) rotate(800deg);
+    transform: translateY(-1080px) rotate(800deg);
+  }
+}
+
+
+.wrapper{
+  width:1170px;
+  margin:0 auto;
+}
+header{
+  width:100%;
+  height:500px;
+  background-size: cover;
+  background-position: center center;
+  position:relative;
+}
+  .logo{
+    width:25px;
+  float:left;
+  line-height:100px;
+  position: absolute;
+  
+}
+.logo img {
+  height:100px;
+margin-top:10px;
+margin-left:10px;
+}
+ul{
+  float:right;
+list-style-type: none;
+margin-top:25px;
+z-index: 1;
+}
+
+ul li{
+display:inline-block;
+
+}
+ul li a{
+ text-decoration: none;
+  font-family:'Roboto', sans-serif;
+  padding: 10px ;
+  color:#fff;
+text-transform: uppercase;
+  transition: 0.6s ease;
+z-index:1;
+cursor: pointer;
+}
+
+ul li a:hover{
+  background-color:white;
+  color:#000;
+  z-index:1;
+cursor: pointer;
+  
+}
+ul li .active a{
+  background-color:white;
+  color:#000;
+  
+}
+.banner-area{
+  width:100%;
+  height:300px;
+  position:absolute;
+  top:150px;
+  
+  background-size: cover;
+  background-position: center center;
+}
+  
+.banner-area h2{
+   float:center;
+  padding-top:2%;
+  font-size:50px;
+  font-family:'Roboto', sans-serif;
+  text-transform: uppercase;
+  color:white;
+  text-shadow: 2px 1px #fff;
+  letter-spacing: 4px;
+
+}
+.banner-area p{
+  float:center;
+  color:white;
+  font-size:25px;
+  font-family:'Roboto', sans-serif;;
+}
+.button{
+  top:330px;
+  left:700px;
+  position: absolute;
+  float:center;
+  
+}
+.btn
+{
+  border:1px solid #fff;
+  padding:10px 30px;
+  color:#fff;
+  text-decoration: none;
+}
+.btn:hover{
+  background-color:white;
+  color:#000;
+  transition: 0.6s ease;
+  border-radius: 10px 10px 10px 10px;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  font-size: 30pt;
+  margin-bottom: 15px;
+  margin-top:60px;
+  color:white;
+}
+
+  
+
+#table {
+  display: table;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+#centeralign {
+  display: table-cell;
+  vertical-align: middle;
+}
+.contact {
+    padding: 130px 0;
+}
+
+.contact .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contact button.btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #ff9100;
+    color: #ffffff;
+}
+
+.contact .title h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact .title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.6;
+    margin: 0 0 40px;
+}
+
+.contact .content .info {
+    margin-top: 30px;
+}
+.contact .content .info i {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #02434b;
+    margin-right: 20px;
+    text-align: center;
+    width: 20px;
+}
+.contact .content .info h4 {
+    font-size: 20px;
+    line-height: 1.4;
+    color: black;
+
+}
+
+.contact .content .info h4 span {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+.footer
+{ 
+  width:100%;
+  height:350px;
+  background-color:#05031C ;
+  position: relative;
+}
+.footer .footer-content{
+  border:1px solid white hidden;
+  height:300px;
+  display:flex;
+
+}
+.footer-section img{
+
+width:150px;
+height:200px;
+float:center;
+}
+.footer-section p{
+  margin-top:10px;
+  font-size: 15px;
+  font-family:'Roboto',sans-serif;
+  color:white;
+  float:left;
+  margin-left:-1em;
+}
+.footer-section .contact{
+  margin-top:10px;
+  float:left;
+  color:white;
+  font-size: 15px;
+  font-family: 'Roboto',sans-serif;
+  margin-left:-1em;
+}
+.footer .footer-content .footer-section{
+  flex:1;
+  padding:25px;
+  border:1px solid white hidden;
+}
+.footer-section h2{
+ margin-left:50px;
+  margin-top:30px;
+font-size:30px;
+font-family:'Roboto',sans-serif;
+float:left;
+color:white;
+}
+.footer-section ul li{
+
+  font-family:'Roboto',sans-serif;
+  float:left;
+  color:white;
+  margin-right:350px;
+  text-decoration: underline;
+  text-align:left;
+  margin-left:50px;
+}
+.footer-section ul li a{
+   text-align: left;
+  float:left;
+}
+.footer-section .text-input{
+  width:300px;
+  margin-top:20px;
+  margin-left:0px;
+margin-right:200px;
+  float:left;
+}
+.footer-section .btn{
+  background-color:#100E47;
+  width:140px;
+  color:white;
+ float:left;
+ margin-left:0px;
+ text-align:center;
+ margin-top:20px;
+}
+.footer-bottom{
+  background-color: #05031C;
+}
+
+@media(max-width:768px){
+  .footer
+{ margin-top: 60px;
+  width:100%;
+  height:950px;
+  background-color:#05031C;
+  position: relative;
+
+}
+.footer .footer-content{
+  border:1px solid white hidden;
+  height:300px;
+  display:flex;
+
+}
+.footer-section img{
+
+width:150px;
+height:200px;
+float:center;
+margin-right:-305px;
+}
+.footer-section p{
+  margin-top:10px;
+  font-size: 15px;
+  font-family:'Roboto',sans-serif;
+  color:white;
+  float:center;
+  margin-right: -62px;
+}
+.footer-section .contact{
+  margin-top:10px;
+  float:left;
+  color:white;
+  font-size: 15px;
+  font-family: 'Roboto',sans-serif;
+  margin-left:-1em;
+}
+#rach{
+  margin-top: 576px;
+    margin-left: -18em;
+}
+#chandler{
+  margin-top: 608px;
+    margin-left: -37em;
+}
+
+.footer .footer-content .footer-section{
+  flex:1;
+  padding:25px;
+  border:1px solid white hidden;
+}
+.footer-section h2{
+ 
+  margin-top:30px;
+font-size:30px;
+font-family:'Roboto',sans-serif;
+float:left;
+color:white;
+margin-top: 349px;
+    margin-left: -7em;
+}
+
+.footer-section ul{
+  margin-top: 370px;
+    margin-left: -13em;
+}
+}
+
+.footer-section ul li{
+
+  font-family:'Roboto',sans-serif;
+  float:left;
+  color:white;
+  margin-right:350px;
+  text-decoration: underline;
+  text-align:left;
+     
+}
+
+
+.footer-section ul li a{
+   text-align: left;
+  float:left;
+}
+.footer-section .text-input{
+  width:300px;
+  margin-top:20px;
+  margin-left:0px;
+margin-right:200px;
+  float:left;
+}
+.footer-section .btn{
+  background-color:#100E47;
+  width:90px;
+  color:white;
+ float:left;
+ margin-left:-25em;
+ text-align:center;
+ margin-top:107px;
+}
+.footer-bottom{
+  background-color:#09082B;
+
+}
+
+}
